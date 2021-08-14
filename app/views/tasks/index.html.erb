@@ -1,0 +1,91 @@
+<html>
+    
+<body>
+    
+<header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+</header>
+
+<% post="海野大輝" %>
+<div class="main_container">
+    <div class="information">
+        <h2>スケジュール一覧</h2>
+        <h2><%= post %></h2>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>タイトル</th>
+                <th>開始日</th>
+                <th>終了日</th>
+                <th>終日</th>
+                <th>スケジュール更新日時</th>
+                <th>確認</th>
+                <th>編集</th>
+                <th>削除</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>544</td>
+                <td>fdsa g</td>
+                <td>2021年08月18日</td>
+                <td>2021年08月25日</td>
+                <td>
+                <strong>○</strong>
+                </td>
+                <td>2021年08月07日 18時27分</td>
+                <td>
+                    <a href="/show">確認</a>
+                </td>
+                <td>
+                    <a href="/edit">編集</a>
+                </td>
+                <td>
+                    <a data-confirm="本当に削除しますか？" rel="nofollow" data-method="delete" href="/posts/544">削除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>543</td>
+                <td>a</td>
+                <td>2021年08月06日</td>
+                <td>2021年08月13日</td>
+                <td>
+                </td>
+                <td>2021年08月08日 17時22分</td>
+                <td>
+                    <a href="/show">確認</a>
+                </td>
+                <td>
+                    <a href="/edit">編集</a>
+                </td>
+                <td>
+                    <a data-confirm="本当に削除しますか？" rel="nofollow" data-method="delete" href="/posts/543">削除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>542</td>
+                <td>w</td>
+                <td>2021年08月18日</td>
+                <td>2021年08月17日</td>
+                <td></td>
+                <td>2021年08月08日 17時22分</td>
+                <td><a href="/show">確認</a></td>
+                <td><a href="/edit">編集</a></td>
+                <td><a data-confirm="本当に削除しますか？" rel="nofollow" data-method="delete" href="/posts/542">削除</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><a href="/new">スケジュール新規登録</a></p>
+</div>
+
+<footer>
+    <h1>現在の日時 : 2021年08月11日 スケジュール合計 : 3</h1>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<body>
+
+<herader>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+</herader>
+
+<div class="main_container">
+    <div class="information">
+        <h2>スケジュール新規作成</h2>
+    </div>
+    <form class="new_post" id="new_post" action="/posts" accept-charset="UTF-8" method="post">
+        <input type="hidden" name="authenticity_token" value="NWwHUIR1Ff314cDGxOxtv/cff1j0l/cyPpgtOOtoW4AFOIRVXUWOIfCk+0t3H8RPJLofBdnXtlTTiXSsTlvpOg==">
+        <table>
+            <tbody>
+                <tr>
+                    <th><label for="post_title">タイトル</label></th>
+                    <td><input type="text" name="post[title]" id="post_title"></td>
+                </tr>
+                <tr>
+                    <th><label for="post_start_at">開始日</label></th>
+                    <td><input type="date" name="post[start_at]" id="post_start_at"></td>
+                </tr>
+                <tr>
+                    <th><label for="post_end_at">終了日</label></th>
+                    <td><input type="date" name="post[end_at]" id="post_end_at"></td>
+                </tr>
+                <tr>
+                    <th><label for="post_is_all_day">終日</label></th>
+                    <td><input name="post[is_all_day]" type="hidden" value="0"><input type="checkbox" value="1" name="post[is_all_day]" id="post_is_all_day">終日の場合はチェックを入れます</td>
+                </tr>
+                <tr>
+                    <th><label for="post_memo">スケジュールメモ</label></th>
+                    <td><textarea class="posts-content" name="post[memo]" id="post_memo"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <ul>
+                <li><input type="submit" name="commit" value="スケジュールを新規登録する" data-disable-with="スケジュールを新規登録する"></li>
+                <li><a href="/index">スケジュール一覧に戻る</a></li>
+            </ul>
+        </div>
+    </form>
+</div>
+
+<footer>
+    <h1>現在の日時 : 2021年08月11日</h1>
+</footer>
+    
+</body>
+
+</html>

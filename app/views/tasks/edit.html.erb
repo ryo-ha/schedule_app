@@ -1,0 +1,55 @@
+<html>
+    
+<body>
+    
+<header>
+    <h1>Ruby on Rails スケジュール管理アプリ</h1>
+</header>
+    
+<div class="main_container">
+    <div class="information">
+        <h2>スケジュール編集</h2>
+    </div>
+    <form class="edit_post" id="edit_post_544" action="/posts/544" accept-charset="UTF-8" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <input type="hidden" name="authenticity_token" value="DSSiq5kPSV2yk7hszUfFogS4muYLNZIZqYc5qRncJcCUHWRURSxVNmvZpqDPyEdlcPsMIFODlxfQ3gVmoKH62w==">
+    <table>
+        <tbody>
+            <tr>
+                <th><label for="post_title">タイトル</label></th>
+                <td><input type="text" value="fdsa g" name="post[title]" id="post_title"></td>
+            </tr>
+            <tr>
+                <th><label for="post_start_at">開始日</label></th>
+                <td><input value="2021-08-18" type="date" name="post[start_at]" id="post_start_at"></td>
+            </tr>
+            <tr>
+                <th><label for="post_end_at">終了日</label></th>
+                <td><input value="2021-08-25" type="date" name="post[end_at]" id="post_end_at"></td>
+            </tr>
+            <tr>
+                <th><label for="post_is_all_day">終日</label></th>
+                <td><input name="post[is_all_day]" type="hidden" value="0"><input type="checkbox" value="1" checked="checked" name="post[is_all_day]" id="post_is_all_day">終日の場合はチェックを入れます</td>
+            </tr>
+            <tr>
+                <th><label for="post_memo">スケジュールメモ</label></th>
+                <td><textarea class="posts-content" name="post[memo]" id="post_memo"> dsF DS</textarea></td>
+            </tr>
+        </tbody>
+    </table>
+        <div>
+            <ul>
+                <li><input type="submit" name="commit" value="スケジュールの編集を完了する" data-disable-with="スケジュールの編集を完了する"></li>
+                <li><a href="/index">スケジュール一覧に戻る</a></li>
+            </ul>
+        </div>
+    </form>    
+</div>    
+    
+<footer>
+    <h1>現在の日時 : 2021年08月11日</h1>
+</footer>
+
+</body>
+
+</html>
